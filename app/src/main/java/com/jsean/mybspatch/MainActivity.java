@@ -17,9 +17,6 @@ import android.widget.Toast;
 import com.jsean.lib_bspatch.BsPatchUtil;
 
 import java.io.File;
-import java.io.IOException;
-
-import ha.excited.BigNews;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //                doPatchNative(oldApkPath, newApk.getAbsolutePath(), patchPath);
 
-                String oldApkPath = Environment.getExternalStorageDirectory()+"/testApk/nhykt-v1.1.13-vc16_Build077.apk";
+                String oldApkPath = Environment.getExternalStorageDirectory()+"/testApk/old.apk";
                 String newApkPath = Environment.getExternalStorageDirectory()+"/testApk/new.apk";
                 String patchPath = Environment.getExternalStorageDirectory()+"/testApk/13_14.patch";
 //                boolean make = BigNews.make(oldApkPath, newApkPath, patchPath);
@@ -93,5 +90,4 @@ public class MainActivity extends AppCompatActivity {
         }.execute();
     }
 
-//    private native void doPatchNative(String oldApkPath, String newApkPath, String patchPath);
 }
